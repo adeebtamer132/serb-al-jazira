@@ -45,9 +45,8 @@ export default function Navbar() {
           </div>
           {/* The Nav Links */}
           <div
-            className={`${
-              isExpanded ? `block` : `hidden`
-            } w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto`}
+            className={`${isExpanded ? `block` : `hidden`
+              } w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto`}
           >
             <div className="text-sm flex flex-wrap items-center gap-4 flex-1 ">
               <a
@@ -67,6 +66,12 @@ export default function Navbar() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400"
               >
                 Products
+              </a>
+              <a
+                href="#Privacy"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400"
+              >
+                Privacy Policy
               </a>
               <div className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400">
                 <DropdownButton />

@@ -9,6 +9,7 @@ import ProductPage from "./components/ProductPage/ProductPage.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage.jsx";
 import CyberSecurity from "./Pages/AboutUsPage/cyberSecurityPage/CyberSecurity.jsx";
+import Privacy from "./components/Privacy/Privacy.jsx";
 export default function App() {
   return (
     <div className="bg-primary-black overflow-hidden">
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:id" element={<ProductPage />} />
           <Route path="/pages/:slug" element={<CyberSecurity />} />
+          <Route path="/Privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <div className=" relative bg-primary-black overflow-hidden ">
