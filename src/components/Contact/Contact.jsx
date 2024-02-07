@@ -33,7 +33,7 @@ export default function Contact() {
           />
         </svg>
       ),
-      contact: "Support@example.com",
+      contact: "Marketing@serbaljazira.com",
     },
     {
       icon: (

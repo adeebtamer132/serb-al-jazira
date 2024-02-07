@@ -6,7 +6,7 @@ export default function DroneSection() {
   return (
     <section
       id="dji"
-      className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
+      className={`${styles.paddingY} ${styles.flexCenter} flex-col relative mb-[150px]`}
     >
       <div className={layout.sectionImgReverse}>
         <motion.img
@@ -16,7 +16,7 @@ export default function DroneSection() {
           viewport={{ once: false, amount: 0.25 }}
           src={dm2}
           alt="dm2"
-          className="w-[100%] h-[100%]  z-[5] object-contain sm:pl-0 pl-[500px] "
+          className="w-[100%] h-[100%]  z-[5] object-contain sm:pl-0 pl-[px] "
         />
       </div>
       <motion.div
@@ -25,7 +25,7 @@ export default function DroneSection() {
         whileInView="show"
         className="absolute z-[0]"
       >
-        <h2 className="font-poppins font-semibold  sm:pl-0 pl-[1200px] md:text-[308px] text-[240px] text-white text-center  w-full md:pt-[270px] pt-[100px] opacity-25 ">
+        <h2 className="font-poppins font-semibold  sm:pl-0 pl-[px] md:text-[308px] text-[240px] sm:text text-white text-center  w-full md:pt-[270px] pt-[100px] opacity-25 ">
           DRONE
         </h2>
       </motion.div>

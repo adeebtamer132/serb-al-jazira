@@ -106,6 +106,55 @@ const products = [
       },
     ],
   },
+  {
+    id: 3,
+    index: 1,
+    img: productOneImage,
+    productName: "GM-5 Reconnecence Attack UVA",
+    productDesc: "Amazing drone ",
+    features: [
+      {
+        featureName: "Comms Range",
+        description:
+          "The communication range of the vehicle is 100 kilometers.",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/comms-1.png",
+        index: "1",
+      },
+      {
+        featureName: "Cruise Speed",
+        description:
+          "The vehicle has a cruise speed of 75-90 kilometers per hour.",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/speed.png        ",
+        index: "2",
+      },
+      {
+        featureName: "MTOW",
+        description: "25kg",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/weight.png        ",
+        index: "3",
+      },
+      {
+        featureName: "Launch Method",
+        description:
+          "The vehicle can be launched using either VTOL (Vertical Takeoff and Landing) or catapult.",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/airstrip.png        ",
+        index: "4",
+      },
+      {
+        featureName: "Recovery Method",
+        description:
+          "The vehicle can be recovered using either VTOL, parachute, net, belly landing, or water landing methods.",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/parachute-1.png",
+        index: "5",
+      },
+      {
+        featureName: "Flight Endurance",
+        description: "VTOL: 8 hours/Fixed: 16 hours",
+        icon: "https://www.tekever.com/wp-content/uploads/2021/05/endurance-1.png        ",
+        index: "6",
+      },
+    ],
+  }
 ];
 
 export const PagesContent = [
