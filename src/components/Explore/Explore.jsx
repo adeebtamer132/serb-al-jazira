@@ -28,6 +28,15 @@ const Explore = () => {
           }
           textStyles="text-center"
         />
+      </motion.div>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+
         <div className="mt-[300px] flex lg:flex-row flex-wrap flex-col min-h-[70vh] gap-5">
           {PagesContent.map((page, index) => (
             <ExploreCard

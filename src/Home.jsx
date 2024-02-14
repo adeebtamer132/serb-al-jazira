@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import AboutHome from "./components/About/aboutHome";
 import DroneSection from "./components/DroneSection/DroneSection";
 import Explore from "./components/Explore/Explore";
 import GetStarted from "./components/GetStarted/GetStarted";
@@ -11,7 +12,7 @@ export default function Home() {
     <div className="bg-primary-black overflow-hidden">
       <Hero />
       <div className="relative">
-        <About />
+        <AboutHome />
         <Explore />
         <div className="gradient-03 z-0" />
       </div>

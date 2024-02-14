@@ -7,8 +7,8 @@ import ScrollToTop from "./utils/ScrollToTop.jsx";
 import ProductsPage from "./components/ProductsPage/ProductsPage.jsx";
 import ProductPage from "./components/ProductPage/ProductPage.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
-// import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage.jsx";
-import AboutPage from "./components/About/aboutpage.jsx";
+import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage.jsx";
+// import AboutPage from "./components/About/aboutpage.jsx";
 import CyberSecurity from "./Pages/AboutUsPage/cyberSecurityPage/CyberSecurity.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/" index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:id" element={<ProductPage />} />
           <Route path="/pages/:slug" element={<CyberSecurity />} />
