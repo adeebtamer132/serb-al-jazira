@@ -1,4 +1,3 @@
-import About from "./components/About/About";
 import AboutHome from "./components/About/aboutHome";
 import DroneSection from "./components/DroneSection/DroneSection";
 import Explore from "./components/Explore/Explore";

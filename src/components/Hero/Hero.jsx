@@ -16,7 +16,7 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto lg:-mt-20 flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
+      <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1 variants={textVariant(1.3)} className={styles.heroHeading}>
           The Drone
         </motion.h1>
@@ -34,8 +34,8 @@ const Hero = () => (
         variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[200px] -mt-[12px]"
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
-        <div className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative bg-[url('https://image.onedrone.com/image/cache/catalog/banners/gsmarena_001-1920x900w.jpg')] bg-cover bg-center">
+        <div className=" absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+        <div className=" w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative bg-[url('https://image.onedrone.com/image/cache/catalog/banners/gsmarena_001-1920x900w.jpg')] bg-cover bg-center">
           <div className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10  flex  justify-center items-center backdrop-brightness-50"></div>
         </div>
 

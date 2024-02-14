@@ -33,7 +33,7 @@ export default function Contact() {
           />
         </svg>
       ),
-      contact: "Marketing@serbaljazira.com",
+      contact: "MARKETING@SERBALJAZIRA.COM",
     },
     {
       icon: (
@@ -99,7 +99,7 @@ export default function Contact() {
                 {contactMethods.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-x-3">
                     <div className="flex-none text-white">{item.icon}</div>
-                    <p>{item.contact}</p>
+                    <p className="">{item.contact}</p>
                   </li>
                 ))}
               </ul>
