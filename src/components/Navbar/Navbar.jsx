@@ -74,7 +74,7 @@ export default function Navbar() {
                 Privacy Policy
               </a>
               <div className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb]">
-                <DropdownButton />
+                <DropdownButton  />
               </div>
             </div>
             <a

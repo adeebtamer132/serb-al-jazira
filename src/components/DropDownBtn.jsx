@@ -16,7 +16,7 @@ const DropdownButton = () => {
       <button
         type="button"
         onClick={toggleDropdown}
-        className="inline-flex items-center px-4 py-2   text-sm font-medium rounded-md text-white   focus:outline-none  "
+        className="hover:text-[#3cafbb] inline-flex items-center px-4 py-2   text-sm font-medium rounded-md text-white   focus:outline-none  "
       >
         Business
         <svg
