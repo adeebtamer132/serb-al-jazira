@@ -15,13 +15,13 @@ export default function About() {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       >
-        <TypingText title="| Serb Al Jazeirah" textStyles="text-center" />
+        <TypingText title="| Serb Al Jazira" textStyles="text-center" />
 
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
-          <span className="font-extrabold text-white">Serb Al Jazeirah</span> is
+          <span className="font-extrabold text-white">Serb Al Jazira</span> is
           A premier company specializing in military drone solutions. We deliver
           cutting-edge unmanned aerial vehicles{" "}
           <span className="font-extrabold text-white">(UAVs) </span> designed
@@ -35,8 +35,10 @@ export default function About() {
           variants={fadeIn("up", "tween", 0.3, 1)}
           src={arrow}
           alt="arrow down"
-          className="w-[18px] h-[28px] object-contain mt-[28px]"
+          className="w-[18px] h-[28px] object-contain mt-[28px] mb-[100px]"
         />
+
+        
       </motion.div>
     </section>
   );

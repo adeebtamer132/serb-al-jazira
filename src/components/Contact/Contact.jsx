@@ -164,7 +164,7 @@ export default function Contact() {
                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
                 ></textarea>
               </div>
-              <button className="w-full px-4 py-2 text-white font-medium bg-blue-600 hover:bg-blue-500 active:bg-blue-600 rounded-lg duration-150">
+              <button className="w-full px-4 py-2 text-white font-medium  border-[1px] bg-gradient-to-l from-[#3cafbb] to-[#2a426b] hover:bg-gradient-to-r from-[#3cafbb] to-[#2a426b] active:bg-[#2a426b] transition-all duration-1s ease-in-out rounded-lg duration-150">
                 Submit
               </button>
             </form>

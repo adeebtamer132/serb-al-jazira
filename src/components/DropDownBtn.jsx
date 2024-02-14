@@ -36,12 +36,12 @@ const DropdownButton = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute z-10 w-48 mt-2 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+        <div className="absolute overflow-hidden z-10 w-48 mt-2 bg-white border border-gray-300 hover:border-[#2a426b] divide-y divide-gray-200 rounded-md shadow-lg">
           {PagesContent.map((page) => (
             <a
               key={page.name}
               href={`#pages/${page.slug}`}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gradient-to-l from-[#3cafbb] to-[#2a426b] hover:text-[white] "
               onClick={() => setIsOpen(!isOpen)}
             >
               {page.name}

@@ -18,7 +18,7 @@ const Footer = () => (
         </h4>
         <a
           type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
+          className="flex items-center h-fit py-4 px-6 bg-transparent bg-gradient-to-l from-[#3cafbb] to-[#2a426b] hover:bg-gradient-to-r from-[#3cafbb] to-[#2a426b] border-[1px] rounded-[32px] gap-[12px]"
         >
           <a href="#/contact" className="font-normal text-[16px] text-white">
             Get Started
@@ -50,7 +50,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  </motion.footer>
+  </motion.footer >
 );
 
 export default Footer;

@@ -19,16 +19,16 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| The Drone" textStyles="text-center" />
+        <TypingText title="|  Products" textStyles="text-center" />
         <TitleText
           title={
             <>
-              Our Perfect Drones <br className="md:block hidden" /> to Explore
+              Our Perfect Products <br className="md:block hidden" /> to Explore
             </>
           }
           textStyles="text-center"
         />
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[300px] flex lg:flex-row flex-wrap flex-col min-h-[70vh] gap-5">
           {PagesContent.map((page, index) => (
             <ExploreCard
               key={page.name}

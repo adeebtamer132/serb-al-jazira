@@ -30,7 +30,7 @@ export default function Navbar() {
           {/* Menau hidden in LG */}
           <div className="block lg:hidden">
             <button
-              className="flex items-center px-3 py-2 border rounded text-white  hover:text-black hover:border-white"
+              className="flex items-center px-3 py-2 border rounded text-white  hover:text-[#3cafbb] hover:border-white"
               onClick={() => toggleExpansion(!isExpanded)}
             >
               <svg
@@ -51,29 +51,29 @@ export default function Navbar() {
             <div className="text-sm flex flex-wrap items-center gap-4 flex-1 ">
               <a
                 href="#/home"
-                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400 mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb] mr-4"
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400 mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb] mr-4"
               >
                 AboutUs
               </a>
               <a
                 href="#products"
-                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb]"
               >
                 Products
               </a>
               <a
                 href="#Privacy"
-                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb]"
               >
                 Privacy Policy
               </a>
-              <div className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-gray-400">
+              <div className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb]">
                 <DropdownButton />
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
             <div>
               <a
                 href="#/contact"
-                className="inline-block  flex-1 text-sm text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent transition-all hover:text-black hover:bg-white mt-4 lg:mt-0"
+                className="inline-block  flex-1 text-sm text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-[#2a426b] transition-all  hover:bg-gradient-to-l from-[#3cafbb] to-[#2a426b]  mt-4 lg:mt-0"
               >
                 ContactUs
               </a>

@@ -8,11 +8,11 @@ export default function CyberSecurity() {
   );
   return (
     <div>
-      <div>
+      <div className="">
         <img
           src={img}
           alt="cyber security"
-          className="w-[100vw] transition-all opacity-60 h-96 object-cover"
+          className=" w-[100vw] transition-all opacity-60 h-96 object-cover"
         />
       </div>
 
@@ -23,14 +23,14 @@ export default function CyberSecurity() {
         </p>
 
         <div className=" mx-auto w-[90%] ">
-          <div className="grid my-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid my-10 grid-rows-1 sm:grid-rows-2 md:grid-rows-3 gap-4">
             {features.map((feature) => (
               <div className=" p-4" key={feature.title}>
                 <h2 className="text-2xl mb-5 font-bold mt-8">
                   {feature.title}
                 </h2>
 
-                <p className="text-base text-gray-200">{feature.description}</p>
+                <p className="leading-10 text-base text-gray-200">{feature.description}</p>
               </div>
             ))}
           </div>

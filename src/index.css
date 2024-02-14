@@ -9,17 +9,26 @@
   font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
 }
+
 .heroImage {
   background-image: url("/src/assets/MVP.png");
   background-repeat: no-repeat;
 }
+
 .gradient-01 {
   background: linear-gradient(to bottom, #003366, #007acc, #f9a734);
   filter: blur(125px);
 }
 
 .hero-gradient {
-  background: linear-gradient(97.86deg, #111111 0%, #111 53.65%, #1f1f1f 100%);
+  /* background: linear-gradient(97.86deg, #111111 0%, #111 53.65%, #1f1f1f 100%); */
+  background: linear-gradient(to left, #3cafbb, #2a426b);
+
+}
+
+.CyberSecurity-GradientBG {
+  background-color: linear-gradient(to left, #3cafbb, #2a426b);
+
 }
 
 .gradient-02 {
@@ -30,6 +39,8 @@
   right: 0px;
 
   background: #7aebfb;
+  /* background: linear-gradient(to right, #3cafbb, #2a426b); */
+
   filter: blur(190px);
 }
 
@@ -49,6 +60,8 @@
   top: 5%;
 
   background: rgba(0, 122, 204, 0.35);
+  /* background: linear-gradient(to right, #3cafbb, #2a426b); */
+
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -60,17 +73,16 @@
   left: 30%;
   top: 10%;
 
-  background: rgba(45, 72, 152, 0.75);
+  /* background: rgba(45, 72, 152, 0.75); */
+  background: linear-gradient(to right, #3cafbb, #2a426b);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
 
 .gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .feedback-gradient {
@@ -92,5 +104,6 @@
   bottom: -130px;
 
   background: #65c4fa;
+  /* background: linear-gradient(to right, #3cafbb, #2a426b); */
   filter: blur(150px);
 }
