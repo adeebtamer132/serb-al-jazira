@@ -37,7 +37,7 @@ const Explore = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
 
-        <div className="mt-[300px] flex lg:flex-row flex-wrap flex-col min-h-[70vh] gap-5">
+        <div className="mt-[300px] flex lg:flex-row flex-wrap flex-col min-h-[70vh] gap-5 ">
           {PagesContent.map((page, index) => (
             <ExploreCard
               key={page.name}
