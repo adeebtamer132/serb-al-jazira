@@ -140,7 +140,7 @@ export default function Privacy() {
                 >
                     If you have any questions about this Privacy Policy or our privacy practices, please contact us: <br></br>
                     By email: <motion.a href="mailto:marketing@serbaljazira.com" className="border border-solid border-gray-300 rounded-lg font-extrabold bg-gradient-to-l from-[#3cafbb] to-[#2a426b] pr-[10px] pl-[10px] "> Support@serbaljazira.com </motion.a> <br></br>
-                    By visiting this page on our website: <motion.a href="#/contact" className="border border-solid border-gray-300 rounded-lg font-extrabold bg-gradient-to-l from-[#3cafbb] to-[#2a426b] pr-[10px] pl-[10px]"> click here</motion.a>
+                    By visiting this page on our website: <br></br><motion.a href="#/contact" className="border border-solid border-gray-300 rounded-lg font-extrabold bg-gradient-to-l from-[#3cafbb] to-[#2a426b] pr-[10px] pl-[10px]"> click here</motion.a>
                 </motion.p>
 
             </section>
