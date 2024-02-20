@@ -18,9 +18,9 @@ export default function Navbar() {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.xPaddings} py-8 relative`}
+        className={`${styles.xPaddings} py-8 relative `}
       >
-        <nav className="flex items-center justify-between flex-wrap  m-auto  p-6">
+        <nav className="flex items-center justify-between  flex-wrap  m-auto  p-6">
           <Link
             to="/home"
             className="flex items-center flex-shrink-0 text-white mr-6 lg:hidden"
@@ -45,8 +45,9 @@ export default function Navbar() {
           </div>
           {/* The Nav Links */}
           <div
-            className={`${isExpanded ? `block` : `hidden`
-              } w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto`}
+            className={`${
+              isExpanded ? `block` : `hidden`
+            } w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto`}
           >
             <div className="text-sm flex flex-wrap items-center gap-4 flex-1 ">
               <a
@@ -74,7 +75,7 @@ export default function Navbar() {
                 Privacy Policy
               </a>
               <div className="block mt-4 lg:inline-block lg:mt-0 text-white text-base hover:text-[#3cafbb]">
-                <DropdownButton  />
+                <DropdownButton />
               </div>
             </div>
             <a

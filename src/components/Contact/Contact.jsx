@@ -1,5 +1,58 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Alert from "../alert/Alert";
+
 export default function Contact() {
+  const [emailSendedMessage, setEmailSendedMessage] = useState(false);
+  const [emailSended, setEmailSended] = useState(false);
+  const form = useRef();
+  var today = new Date();
+  const day = today.getDate();
+  const RemoveEmailMessage = () => {
+    setTimeout(function () {
+      setEmailSendedMessage(false);
+    }, 5000);
+  };
+  console.log(import.meta.env.VITE_publicKey_2);
+
+  const emailJS_settings = {
+    service: day % 2 == 1 ? "service_yd51868" : "service_q0534cc",
+    templateId: day % 2 == 1 ? "template_unk2gmi" : "template_kltb92s",
+    publicKey:
+      day % 2 == 1
+        ? import.meta.env.VITE_publicKey_1
+        : import.meta.env.VITE_publicKey_2,
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        emailJS_settings.service,
+        emailJS_settings.templateId,
+        form.current,
+        {
+          publicKey: emailJS_settings.publicKey,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setEmailSended(true);
+          setEmailSendedMessage(true);
+          RemoveEmailMessage();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setEmailSended(false);
+          setEmailSendedMessage(true);
+          RemoveEmailMessage();
+        }
+      );
+  };
   const mapStyle = {
     overflow: "hidden",
     maxWidth: "100%",
@@ -34,6 +87,7 @@ export default function Contact() {
         </svg>
       ),
       contact: <a className="border border-solid border-gray-300 rounded-lg font-extrabold bg-gradient-to-l from-[#3cafbb] to-[#2a426b] pr-[10px] pl-[10px] " href="mailto:Marketing@serbaljazira.com">Marketing@serbaljazira.com</a>,
+
     },
     {
       // icon: (
@@ -76,7 +130,7 @@ export default function Contact() {
           />
         </svg>
       ),
-      contact: "Mountain View, California, United State.",
+      contact: "Saudi Arabia, Malaz .",
     },
   ];
 
@@ -132,12 +186,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <form ref={form} onSubmit={sendEmail} className="space-y-5">
               <div>
                 <label className="font-medium">Full name</label>
                 <input
                   type="text"
                   required
+                  name="user_name"
                   className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
                 />
               </div>
@@ -146,6 +201,7 @@ export default function Contact() {
                 <input
                   type="email"
                   required
+                  name="user_email"
                   className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
                 />
               </div>
@@ -153,13 +209,14 @@ export default function Contact() {
                 <label className="font-medium">Company</label>
                 <input
                   type="text"
-                  required
+                  name="user_company"
                   className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
                 <label className="font-medium">Message</label>
                 <textarea
+                  name="message"
                   required
                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
                 ></textarea>
@@ -168,6 +225,15 @@ export default function Contact() {
                 Submit
               </button>
             </form>
+            <div
+              className={`${!emailSendedMessage ? "translate-x-[200%] " : "translate-x-[0%]"
+                }  transition-all`}
+            >
+              <Alert
+                emailSended={emailSended}
+                setEmailSendedMessage={setEmailSendedMessage}
+              />
+            </div>
           </div>
         </div>
       </div>

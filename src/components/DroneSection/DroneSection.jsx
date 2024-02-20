@@ -1,7 +1,7 @@
 import styles, { layout } from "../../style";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
-import dm2 from "../../assets/dm2.svg";
+import dm2 from "../../assets/dm-edited.svg";
 export default function DroneSection() {
   return (
     <section
